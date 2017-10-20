@@ -2,15 +2,17 @@ git
 1.自报家门
 Git config --global user.name #你是谁
 Git config --global user.email #怎么联系你
+git config --list #查看git的配置情况
 2.创建版本库
 cd 路径
 mkdir 文件名 #最好不要是中文,可能会出现问题
-git init #初始化 .git隐藏文件
+git init #初始化 .git隐藏文件 储存版本信息
 3.添加文件
  git status #查看状态(红色 未提交 )
  git add 文件名 #3.1单个文件到缓存区
  git add . #添加多个文件到缓存区
  git commit -m "说明" #3.2提交到本地仓库(版本库)
+ git log #查看commit的信息
 4.总结
 工作区------>暂存区-------->版本库
  (红)	add   (绿)  commit
