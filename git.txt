@@ -7,6 +7,6 @@ cd 路径
 mkdir 文件名 #最好不要是中文,可能会出现问题
 git init #初始化 .git隐藏文件
 3.添加文件
- git status #查看状态
- git add 文件名 #单个文件
+ git status #查看状态(红色 未提交 )
+ git add 文件名 #单个文件到缓存区
  git add . #添加多个文件
