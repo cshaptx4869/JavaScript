@@ -33,3 +33,4 @@ git commit -am '说明' #跳过git add添加到暂存区 直接将工作区所�
 git commit --amend #撤销上一次提交 并将现有的暂存区的文件重新提交(也可仅改变对内容的描述 即修改 -m 的"说明"部分)
 git checkout 文件名 #修改工作区后,返回文件修改之前的状态
 git checkout . #回复全部工作区文件的修改
+git reset HEAD 文件名 #拉取最近一次提交的版本库的这个文件到暂存区,该操作不影响工作区(HEAD 是头指针)
