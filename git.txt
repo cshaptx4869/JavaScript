@@ -39,3 +39,13 @@ git reset HEAD 文件名 #拉取最近一次提交的版本库的这个文件到
 git rm 文件名 #删除工作区和暂存区的文件
 git rm --cached 文件名 #仅仅删除暂存区的文件(一般用于删除不小心添加到暂存区的文件)
 git rm -f 文件名
+
+9.分支
+git branch #查看分支
+git branch 分支名 #创建分支
+git checkout 分支名 #切换分支
+git branch -d 分支名 #删除分支
+git branch -m 旧名 新名
+git checkout master #切换到主分支
+git checkout -b 分支名 #新建并切换到分支
+git merge 分支名 #合并分支
