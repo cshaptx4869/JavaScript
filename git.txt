@@ -48,4 +48,8 @@ git branch -d 分支名 #删除分支
 git branch -m 旧名 新名
 git checkout master #切换到主分支
 git checkout -b 分支名 #新建并切换到分支
-git merge 分支名 #合并分支(如果有相同部分会报错,需手动修改,在提交)
+git merge 分支名 #合并分支(合并之前先切换到master分支,如果有相同部分会报错,需手动修改,在提交)
+git diff #比较工作区与暂存区文件的差异
+git diff --staged #比较暂存区与版本库的文件差异
+git diff 版本号 版本号 #比较分之内的两个版本的差异 默认选择7个或8个
+git diff 分支 分支 #比较两个分支的最新提交版本的差异
