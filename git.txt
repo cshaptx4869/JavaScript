@@ -52,4 +52,12 @@ git merge 分支名 #合并分支(合并之前先切换到master分支,如果有
 git diff #比较工作区与暂存区文件的差异
 git diff --staged #比较暂存区与版本库的文件差异
 git diff 版本号 版本号 #比较分之内的两个版本的差异 默认选择7个或8个
-git diff 分支 分支 #比较两个分支的最新提交版本的差异
+git diff 分支 分支 ..#比较两个分支的最新提交版本的差异
+
+git stash #将文件保存到暂存区和工作区,不改变工作区文件
+git stash list #查看提交的操作记录
+git stash apply stash@{*} #后面不加名字则应用最近一次的储存信息
+git stash drop stash@{*}  #git stash apply只是运用储存的信息,并不删除它,drop 命令可以删除它
+
+10.git远程仓库GitHub
+https协议/hhs协议
