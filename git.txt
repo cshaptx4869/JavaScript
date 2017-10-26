@@ -62,8 +62,8 @@ git stash drop stash@{*}  #git stash apply只是运用储存的信息,并不删�
 10.git远程仓库GitHub
 https协议/hhs协议]
 
-git remote add origin git@github.com:用户名/远程仓库.git #用于建立本地仓库与github建立连接
-git push -u origin master #推送 第一次推送加u,后续可简化不写
+git remote add origin git@github.com:用户名/远程仓库.git #用于建立本地仓库与github建立连接,origin是远程库的名字,可修改
+git push -u origin master #推送 第一次推送加u,后续可简化不写 或 直接写成 git push
 
 11.SSH警告
 当你第一次使用Git的clone或者push命令连接GitHub时，会得到一个警告：
