@@ -1,4 +1,4 @@
-git笔记
+﻿git笔记
 
 1.自报家门
 Git config --global user.name #你是谁
@@ -60,4 +60,23 @@ git stash apply stash@{*} #后面不加名字则应用最近一次的储存信�
 git stash drop stash@{*}  #git stash apply只是运用储存的信息,并不删除它,drop 命令可以删除它
 
 10.git远程仓库GitHub
-https协议/hhs协议
+https协议/hhs协议]
+
+git remote add origin git@github.com:用户名/远程仓库.git #用于建立本地仓库与github建立连接
+git push -u origin master #推送 第一次推送加u,后续可简化不写
+
+11.SSH警告
+当你第一次使用Git的clone或者push命令连接GitHub时，会得到一个警告：
+
+The authenticity of host 'github.com (xx.xx.xx.xx)' can't be established.
+RSA key fingerprint is xx.xx.xx.xx.xx.
+Are you sure you want to continue connecting (yes/no)?
+
+这是因为Git使用SSH连接，而SSH连接在第一次验证GitHub服务器的Key时，需要你确认GitHub的Key的指纹信息是否真的来自GitHub的服务器，输入yes回车即可。
+
+Git会输出一个警告，告诉你已经把GitHub的Key添加到本机的一个信任列表里了：
+
+Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
+这个警告只会出现一次，后面的操作就不会有任何警告了。
+
+如果你实在担心有人冒充GitHub服务器，输入yes前可以对照GitHub的RSA Key的指纹信息是否与SSH连接给出的一致。
