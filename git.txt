@@ -81,3 +81,9 @@ Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
 这个警告只会出现一次，后面的操作就不会有任何警告了。
 
 如果你实在担心有人冒充GitHub服务器，输入yes前可以对照GitHub的RSA Key的指纹信息是否与SSH连接给出的一致。
+
+12.把工作现场"储藏"起来
+git stash #保存没有提交的变化,即把工作现场"储藏"起来,在查看工作区,就是干净的
+git stash list #查看保存的状态
+git stash apply #恢复,stash内容不删除,需用git stash drop删除
+git stash pop #恢复的同时把stash内容也删除
